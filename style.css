@@ -223,4 +223,32 @@
   font-weight: bold;
 }
 
+/* update-section css */
+
+.update-section{
+   padding: 2rem;
+   justify-content: center;
+   gap:1rem;
+}
+.update-section>div{
+  width: 24rem;
+}
+.update-section h3{
+  margin:2rem auto;
+  text-align: center;
+  font-size: 1.8rem;
+  color:blue;
+}
+.update-box{
+   height: 24rem;
+   padding:2rem;
+   overflow: auto;
+   border-radius: 10px;
+   color:white;
+}
+.update-header:hover{
+  text-decoration: underline;
+  color:black;
+  cursor: pointer;
+}
 
