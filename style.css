@@ -79,6 +79,37 @@
   padding: 0.6rem 0.8rem;
 }
 
+/* Benefits section css */
+
+.Benefit-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  overflow: auto;
+  color: white;
+}
+
+.benefit {
+  min-width: 24vw;
+  padding: 2rem;
+  padding-top: 4rem;
+  background-color: orange;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.colored-benefit {
+  background-color: rgb(8, 8, 48);
+}
+
+.benefit>ion-icon {
+  height: 3rem;
+  width: 3rem;
+}
+
 /* Mission-section- {section-2} */
 
 .mission-section {
