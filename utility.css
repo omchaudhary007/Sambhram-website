@@ -8,6 +8,17 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*  scrollbar style */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 2.5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 10px;
+}
 
 .section {
     width: 100%;
@@ -38,3 +49,11 @@ body {
 .color-span {
     color: orange;
 }
+
+.line {
+    width: 100%;
+    height: 0.5px;
+    margin: 1rem auto;
+    background-color: rgb(166, 161, 161);
+}
+
