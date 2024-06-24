@@ -156,50 +156,57 @@
   gap: 1rem;
 }
 
-/* course offered section css part */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* About-us section css */
+
+.about {
+  padding: 2rem;
+  gap: 2rem;
 }
-/* h1{
-  color: white;
-  background-color: bisque;
-} */
+
+.left-about {
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.left-about>.btn {
+  width: fit-content;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font: bold;
+}
+
+.right-about {
+  flex: 1;
+  min-height: 20rem;
+}
+
+/* course-section css */
 
 .course {
-  width: 100%;
   margin: 1.25rem auto; 
   text-align: center;
-  background-color: #fff;
   padding: 1.25rem; 
-  border-radius: 10px; 
 }
 
 .heading {
   font-size: 2.25rem; 
   font-weight: bold;
-  margin-bottom: 1.25rem; 
+  margin: 4rem auto; 
   color: #333;
 }
 
 .course-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 1.25rem; 
-}
-
-.courseimage-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+  grid-gap: 2rem; 
 }
 
 .courseimage-container img {
   width: 100%;
   height: 15.625rem; 
   object-fit: cover;
-  margin-bottom: 0.625rem; 
   border-radius: 10px; 
 }
 
@@ -211,17 +218,9 @@ body {
 }
 
 .enroll-btn {
-  background-color: orange;
-  color: #fff;
-  padding: 0.9375rem 1.875rem; 
-  border: none;
+  padding: 0.8rem 2rem; 
   border-radius: 10px; 
-  cursor: pointer;
-  font-size: 1.125rem; 
   font-weight: bold;
 }
 
-.enroll-btn:hover {
-  background-color: #8e7b3e;
-}
-/*course offered page styling end */
+

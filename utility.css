@@ -35,3 +35,6 @@ body {
 .btn:hover{
   background-color:red;
 }
+.color-span {
+    color: orange;
+}
