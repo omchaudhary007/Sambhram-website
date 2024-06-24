@@ -155,3 +155,73 @@
   white-space: nowrap;
   gap: 1rem;
 }
+
+/* course offered section css part */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  color: white;
+  background-color: bisque;
+}
+
+.course {
+  width: 100%;
+  margin: 1.25rem auto; 
+  text-align: center;
+  background-color: #fff;
+  padding: 1.25rem; 
+  border-radius: 10px; 
+}
+
+.heading {
+  font-size: 2.25rem; 
+  font-weight: bold;
+  margin-bottom: 1.25rem; 
+  color: #333;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1.25rem; 
+}
+
+.courseimage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.courseimage-container img {
+  width: 100%;
+  height: 15.625rem; 
+  object-fit: cover;
+  margin-bottom: 0.625rem; 
+  border-radius: 10px; 
+}
+
+.image-text {
+  font-size: 1.5rem; 
+  font-weight: bold;
+  margin-bottom: 0.625rem; 
+  color: #333;
+}
+
+.enroll-btn {
+  background-color: orange;
+  color: #fff;
+  padding: 0.9375rem 1.875rem; 
+  border: none;
+  border-radius: 10px; 
+  cursor: pointer;
+  font-size: 1.125rem; 
+  font-weight: bold;
+}
+
+.enroll-btn:hover {
+  background-color: #8e7b3e;
+}
+/*course offered page styling end */
