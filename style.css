@@ -1,0 +1,126 @@
+/* Header section css starts */
+
+.header {
+  min-height: fit-content;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.logo {
+  width: 14rem;
+}
+
+.nav-links {
+  font-size: 1.1rem;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links a:hover {
+  color: orange;
+  transition: all 0.s linear;
+}
+
+.nav-links button {
+  padding: 0.3rem 0.6rem;
+}
+
+/* main-section css starts */
+
+.main {
+  height: 100vh;
+  position: relative;
+  background: url('assest/clgpg.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.main-text {
+  position: relative;
+  z-index: 2;
+  width: 60%;
+  color: white;
+  font: bold;
+}
+
+.main-text>h1 {
+  font-size: 2.4em;
+  margin-bottom: 2rem;
+  white-space: nowrap;
+}
+
+.main-text>p {
+  width: 80%;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.main-text>button {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  padding: 0.6rem 0.8rem;
+}
+
+/* Mission-section- {section-2} */
+
+.mission-section {
+  padding: 2rem;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.left-side {
+  flex: 1;
+  padding: 0.5rem;
+  background-color: rgb(200, 185, 185);
+  border-radius: 5px;
+}
+
+.left-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.right-side {
+  flex: 1;
+  padding: 2rem 0.5rem;
+  line-height: 1.8rem;
+}
+
+.mission-header {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.mission-header>span {
+  color: orange;
+}
+
+.tasks {
+  margin-top: 2rem;
+}
+
+.task {
+  white-space: nowrap;
+  gap: 1rem;
+}
