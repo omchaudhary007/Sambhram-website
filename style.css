@@ -29,7 +29,8 @@
 }
 
 .nav-links button {
-  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
 }
 
 /* main-section css starts */
@@ -77,6 +78,7 @@
   margin-top: 1rem;
   font-size: 1.1rem;
   padding: 0.6rem 0.8rem;
+  
 }
 
 /* Benefits section css */
@@ -113,12 +115,13 @@
 /* update-section css */
 
 .update-section{
-  padding: 2rem;
+  max-width: 90%;
+  margin: auto;
   justify-content: center;
   gap:1rem;
 }
 .update-section>div{
- min-width: 24rem;
+  width: 24rem;
 }
 .update-section h3{
  margin:2rem auto;
@@ -143,12 +146,15 @@
 
 .mission-section {
   padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(530px,1fr));
   justify-content: center;
   gap: 2rem;
 }
 
 .left-side {
-  flex: 1;
+  max-width: 80%;
+  margin: auto;
   padding: 0.5rem;
   background-color: rgb(200, 185, 185);
   border-radius: 5px;
@@ -162,8 +168,9 @@
 }
 
 .right-side {
-  flex: 1;
-  padding: 2rem 0.5rem;
+  max-width: 90%;
+  margin: auto;
+  padding: 2rem 1.5rem;
   line-height: 1.8rem;
 }
 
@@ -344,4 +351,22 @@ textarea {
 .footer-bottom{
   margin: 1rem auto;
   text-align: center;
+}
+
+
+/* Media-query section */
+
+@media (max-width:850px) {
+  html{
+      font-size:60%;
+  }
+  .about{
+    flex-direction: column;
+  }
+  
+}
+@media (max-width:550px) {
+  html{
+    font-size: 50%;
+  }
 }
