@@ -110,7 +110,36 @@
   width: 3rem;
 }
 
-/* Mission-section- {section-2} */
+/* update-section css */
+
+.update-section{
+  padding: 2rem;
+  justify-content: center;
+  gap:1rem;
+}
+.update-section>div{
+ min-width: 24rem;
+}
+.update-section h3{
+ margin:2rem auto;
+ text-align: center;
+ font-size: 1.8rem;
+ color:blue;
+}
+.update-box{
+  height: 24rem;
+  padding:2rem;
+  overflow: auto;
+  border-radius: 10px;
+  color:white;
+}
+.update-header:hover{
+ text-decoration: underline;
+ color:black;
+ cursor: pointer;
+}
+
+/* Mission-section */
 
 .mission-section {
   padding: 2rem;
@@ -223,32 +252,96 @@
   font-weight: bold;
 }
 
-/* update-section css */
+/* Contact-us section css */
 
-.update-section{
-   padding: 2rem;
-   justify-content: center;
-   gap:1rem;
+.contact-section {
+  flex-direction: column;
+  gap: 2rem;
 }
-.update-section>div{
-  width: 24rem;
+
+.contact-section>h3 {
+  width: fit-content;
+  margin-top: 5rem;
+  font-size: 2rem;
+  white-space: nowrap;
 }
-.update-section h3{
-  margin:2rem auto;
+
+.user-form {
+  width: 70%;
+  padding: 2rem;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem 2rem;
+}
+
+.user-form input,
+textarea {
+  width: 100%;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+}
+
+.user-form input {
+  height: 2rem;
+}
+
+.user-form label {
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.user-form label::after {
+  content: '*';
+  color: red;
+}
+
+.user-form button {
+  padding: 0.5rem 1rem;
+  display: block;
+  margin: 2rem auto;
+  font-size: 1.1rem;
+  border-radius: 20px;
+}
+
+/* Footer-section css */
+
+.footer-content{
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap:2rem;
+  
+}
+.footer-headings{
+  margin-bottom: 2rem;
+  font-size:1.3rem;
+  color:orange;
+}
+.footer-content a{
+  text-decoration: none;
+  color:white;
+}
+.footer-content a:hover{
+  color: orange;
+  transition: all 0.3s linear;
+}
+.footer-div{
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+}
+.social-links{
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+.footer-bottom{
+  margin: 1rem auto;
   text-align: center;
-  font-size: 1.8rem;
-  color:blue;
 }
-.update-box{
-   height: 24rem;
-   padding:2rem;
-   overflow: auto;
-   border-radius: 10px;
-   color:white;
-}
-.update-header:hover{
-  text-decoration: underline;
-  color:black;
-  cursor: pointer;
-}
-

@@ -16,7 +16,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: blue;
+    background: orange;
     border-radius: 10px;
 }
 
@@ -44,7 +44,7 @@ body {
   cursor: pointer;
 }
 .btn:hover{
-  background-color:red;
+    background-color:rgb(255, 98, 0);
 }
 .color-span {
     color: orange;
