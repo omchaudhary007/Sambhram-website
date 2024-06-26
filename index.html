@@ -18,18 +18,46 @@
         class="corner-image"
       />
       <!-- navigation bars -->
-      <nav class="nav-links flex links">
-        <a href="#Home">Home</a>
-        <a href="#About">About us</a>
-        <a href="#Courses">Courses</a>
-        <a href="#Contact us">Contact us</a>
-        <button class="btn">Apply</button>
+      <nav class="nav-links">
+        <a
+          class="home"
+          href="#Home"
+          onclick="closeNav();scrolltoElem(this.className)"
+          >Home</a
+        >
+        <a class="about" href="#About" onclick="scrolltoElem(this.className)"
+          >About us</a
+        >
+        <a class="course" href="#Courses" onclick="scrolltoElem(this.className)"
+          >Courses</a
+        >
+        <a
+          class="contact"
+          href="#Contact us"
+          onclick="scrolltoElem(this.className)"
+          >Contact us</a
+        >
+        <button onclick="closeNav();showForm()" class="btn">Apply</button>
       </nav>
+      <div class="mobile-navbar-btn">
+        <ion-icon
+          class="mobile-nav-icon"
+          id="mobile-nav-icon1"
+          name="menu-outline"
+        ></ion-icon>
+
+        <ion-icon
+          onclick="closeNav()"
+          class="mobile-nav-icon"
+          id="mobile-nav-icon2"
+          name="close-outline"
+        ></ion-icon>
+      </div>
     </header>
 
     <!-- Main section -->
 
-    <main class="main container">
+    <main class="main home-section container">
       <div class="main-text">
         <h1>Embrace Excellence at Sambhram</h1>
         <p>
@@ -38,7 +66,7 @@
           future leaders with practical education and global perspectives. Join
           us today!
         </p>
-        <button class="btn">Apply Now</button>
+        <button onclick="showForm()" class="btn">Apply Now</button>
       </div>
     </main>
 
@@ -74,9 +102,9 @@
         <p>Discover our extensive sports grounds and facilities.</p>
       </div>
     </section>
-    
+
     <!-- Updates-section  -->
-    
+
     <section class="update-section container section flex">
       <div class="upcoming-events">
         <h3>Upcoming Events</h3>
@@ -199,10 +227,13 @@
     </section>
 
     <!-- About section -->
-    
-    <section class="about container section flex">
+
+    <section class="about-section container section flex">
       <div class="left-about flex">
-        <h3><span class="color-span">Explore</span> Sambhram ACADEMY OF MANAGEMENT STUDIES</h3>
+        <h3>
+          <span class="color-span">Explore</span> Sambhram ACADEMY OF MANAGEMENT
+          STUDIES
+        </h3>
         <p>
           <b>SAMS</b> is an offshoot of the <b>Sambhram Group</b>, widely known
           for its services in education, health, housing, property development,
@@ -210,7 +241,7 @@
           the Group and it runs several professional institutions in Bangalore,
           KGF in Karnataka state and Chittoor in Andhra Pradesh.
         </p>
-        <button class="btn">Apply Now</button>
+        <button onclick="showForm()" class="btn">Apply Now</button>
       </div>
       <iframe
         class="right-about"
@@ -220,49 +251,61 @@
 
     <!-- Courses-section starts  -->
 
-    <div class="course container section">
+    <div class="course-section container section">
       <h1 class="heading">Courses Offered</h1>
       <div class="course-grid">
         <div class="courseimage-container">
           <img src="assest/bca.jpg" alt="bca" />
           <p class="image-text">BCA</p>
-          <button class="enroll-btn btn">Enroll Now</button>
+          <button onclick="showForm()" class="enroll-btn btn">
+            Enroll Now
+          </button>
         </div>
 
         <div class="courseimage-container">
           <img src="assest/mca.jpg" alt="mca" />
           <p class="image-text">MCA</p>
-          <button class="enroll-btn btn">Enroll Now</button>
+          <button onclick="showForm()" class="enroll-btn btn">
+            Enroll Now
+          </button>
         </div>
 
         <div class="courseimage-container">
           <img src="assest/bba.jpg" alt="bba" />
           <p class="image-text">BBA</p>
-          <button class="enroll-btn btn">Enroll Now</button>
+          <button onclick="showForm()" class="enroll-btn btn">
+            Enroll Now
+          </button>
         </div>
 
         <div class="courseimage-container">
           <img src="assest/mba.jpg" alt="mba" />
           <p class="image-text">MBA</p>
-          <button class="enroll-btn btn">Enroll Now</button>
+          <button onclick="showForm()" class="enroll-btn btn">
+            Enroll Now
+          </button>
         </div>
 
         <div class="courseimage-container">
           <img src="assest/bcom.jpg" alt="bcom" />
           <p class="image-text">BCom</p>
-          <button class="enroll-btn btn">Enroll Now</button>
+          <button onclick="showForm()" class="enroll-btn btn">
+            Enroll Now
+          </button>
         </div>
 
         <div class="courseimage-container">
           <img src="assest/mcom.jpg" alt="mcom" />
           <p class="image-text">MCom</p>
-          <button class="enroll-btn btn">Enroll Now</button>
+          <button onclick="showForm()" class="enroll-btn btn">
+            Enroll Now
+          </button>
         </div>
       </div>
     </div>
-    
+
     <!-- Contact-section -->
-     
+
     <section class="contact-section container flex items-center">
       <h3><span class="color-span">Reach Out</span> to Us</h3>
       <form class="user-form">
@@ -317,23 +360,153 @@
         </div>
         <div class="footer-div">
           <h3 class="footer-headings">Quick Links</h3>
-          <a href="#Home">Home</a>
-          <a href="#Courses">Courses</a>
-          <a href="#About">About us</a>
-          <a href="#Contact us">Contact us</a>
+          <a
+            class="home"
+            href="#Home"
+            onclick="closeNav();scrolltoElem(this.className)"
+            >Home</a
+          >
+          <a class="about" href="#About" onclick="scrolltoElem(this.className)"
+            >About us</a
+          >
+          <a
+            class="course"
+            href="#Courses"
+            onclick="scrolltoElem(this.className)"
+            >Courses</a
+          >
+          <a
+            class="contact"
+            href="#Contact us"
+            onclick="scrolltoElem(this.className)"
+            >Contact us</a
+          >
         </div>
         <div class="footer-div">
           <h3 class="footer-headings">Follow Us</h3>
-          <a class="social-links" href="https://www.instagram.com/sambhraminstitute/?hl=en" target="_blank"><ion-icon name="logo-instagram"></ion-icon>Instagram</a>
-          <a class="social-links" href="https://www.facebook.com/profile.php?id=102764933107120&_rdr" target="_blank"><ion-icon name="logo-facebook"></ion-icon>Facebook</a>
-          <a class="social-links" href="https://twitter.com/sambhraminst" target="_blank"><ion-icon name="logo-twitter"></ion-icon>Twitter</a>
+          <a
+            class="social-links"
+            href="https://www.instagram.com/sambhraminstitute/?hl=en"
+            target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon>Instagram</a
+          >
+          <a
+            class="social-links"
+            href="https://www.facebook.com/profile.php?id=102764933107120&_rdr"
+            target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon>Facebook</a
+          >
+          <a
+            class="social-links"
+            href="https://twitter.com/sambhraminst"
+            target="_blank"
+            ><ion-icon name="logo-twitter"></ion-icon>Twitter</a
+          >
         </div>
       </div>
       <div class="footer-bottom">
-        Sambhram Academy of Management Studies &copy; 2024 | Designed by Prince & Om
+        Sambhram Academy of Management Studies &copy; 2024 | Designed by Prince
+        & Om
       </div>
     </footer>
-    
+
+    <!-- Apply-now form section -->
+    <div class="blur-background" onclick="closeForm()"></div>
+    <form
+      class="apply-form"
+      action="#"
+    >
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label class="required" for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label class="required" for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" min="1900-01-01" required>
+
+        <label class="required" for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label class="required" for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label class="required" for="phone">Phone Number</label>
+        <input type="tel" maxlength="10" id="phone" name="phone" required />
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Adhar Card Details</legend>
+        <label class="required" for="adharCardNumber">Adhar Card Number</label>
+        <input
+          type="text"
+          id="adharCardNumber"
+          name="adharCardNumber"
+          required
+        />
+
+        <label
+          class="required" 
+          for="adharCardFile"
+          title="Goverment card such as Aadhar, Pan,Voter Id"
+          >Upload Goverment card:</label
+        >
+        <input type="file" id="adharCardFile" name="adharCardFile" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Educational Background</legend>
+        <label class="required" for="educationLevel">Latest Education Level</label>
+        <input type="text" id="educationLevel" name="educationLevel" required />
+
+        <label class="required" for="educationInstitution">Name of School/College</label>
+        <input
+          type="text"
+          id="educationInstitution"
+          name="educationInstitution"
+          required
+        />
+
+        <label class="required" for="yearOfPassing">Year of Passing</label>
+        <input type="text" id="yearOfPassing" name="yearOfPassing" required />
+
+        <label class="required" for="educationCertificate"
+          >Upload Latest Education Certificate</label
+        >
+        <input
+          type="file"
+          id="educationCertificate"
+          name="educationCertificate"
+          required
+        />
+      </fieldset>
+
+      <fieldset class="course-name flex items-center">
+        <legend>Course Selection</legend>
+        <label class="required" for="course">Select Desired Course</label>
+        <input type="radio" id="bca" name="course" value="BCA" />
+        <label for="bca"> BCA</label>
+        <input type="radio" id="mca" name="course" value="MCA" />
+        <label for="mca"> MCA</label>
+        <input type="radio" id="bba" name="course" value="BBA" />
+        <label for="bba"> BBA</label>
+        <input type="radio" id="mba" name="course" value="MBA" />
+        <label for="mba"> MBA</label>
+        <input type="radio" id="bcom" name="course" value="BCOM" />
+        <label for="bcom"> BCOM</label>
+        <input type="radio" id="mcom" name="course" value="MCOM" />
+        <label for="mcom"> MCOM</label>
+      </fieldset>
+      <button class="btn" type="submit">Submit Application</button>
+    </form>
+
     <!-- Script section -->
 
     <script src="app.js"></script>

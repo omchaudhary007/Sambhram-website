@@ -13,9 +13,14 @@
 }
 
 .nav-links {
+  display: flex;
   font-size: 1.1rem;
   align-items: center;
   gap: 1.6rem;
+}
+.mobile-navbar-btn>ion-icon{
+  height: 2rem;
+  width: 2rem;
 }
 
 .nav-links a {
@@ -28,10 +33,27 @@
   transition: all 0.s linear;
 }
 
-.nav-links button {
+.nav-links> button {
   font-size: 0.8rem;
   padding: 0.3rem 0.8rem;
 }
+.mobile-nav {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e49898;
+}
+
+.mobile-navbar-btn{
+  display: none;
+}
+
 
 /* main-section css starts */
 
@@ -65,7 +87,7 @@
 .main-text>h1 {
   font-size: 2.4em;
   margin-bottom: 2rem;
-  white-space: nowrap;
+  text-align: center;
 }
 
 .main-text>p {
@@ -119,6 +141,9 @@
   justify-content: center;
   gap:1rem;
 }
+.update-section>div{
+  width: 24rem;
+}
 
 .update-section h3{
  margin:2rem auto;
@@ -143,7 +168,7 @@
 
 .mission-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(530px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   justify-content: center;
   gap: 2rem;
 }
@@ -190,7 +215,7 @@
 
 /* About-us section css */
 
-.about {
+.about-section {
   gap: 2rem;
 }
 
@@ -215,7 +240,7 @@
 
 /* course-section css */
 
-.course {
+.course-section {
   margin: 1.25rem auto; 
   text-align: center;
 }
@@ -346,6 +371,70 @@ textarea {
   text-align: center;
 }
 
+/* Apply-now form css */
+
+.blur-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px); 
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: 5; 
+}
+
+.apply-form{
+  display: none;
+  width: 70%;
+  padding: 1rem;
+  position: absolute;
+  top: 20%; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  line-height: 1.6;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 10rem;
+}
+.apply-form fieldset{
+  padding: 1rem;
+  border-color: orange;
+}
+.apply-form label{
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.required::after{
+  content: '*';
+  color:red;
+}
+.course-name{
+  flex-wrap: wrap;
+  gap:1rem;
+}
+.apply-form input[type="radio"] {
+  margin-top: -2px;
+  vertical-align: middle;
+}
+.apply-form input[type="text"], input[type="email"], input[type="tel"], select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.apply-form .btn{
+  margin:1rem auto;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+}
+
+
 
 /* Media-query section */
 
@@ -353,8 +442,11 @@ textarea {
   html{
       font-size:60%;
   }
-  .about{
+  .about-section{
     flex-direction: column;
+  }
+  .apply-form{
+    width: 80%;
   }
   
 }
@@ -362,4 +454,19 @@ textarea {
   html{
     font-size: 50%;
   }
+  .nav-links{
+    display: none;
+    background-color: red;
+  }
+  .mobile-navbar-btn {
+    display: inline-block;
+}
+
+#mobile-nav-icon2 {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 90%;
+    z-index: 3;
+}
 }
