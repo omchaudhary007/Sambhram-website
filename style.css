@@ -115,14 +115,11 @@
 /* update-section css */
 
 .update-section{
-  max-width: 90%;
-  margin: auto;
+  flex-wrap: wrap;
   justify-content: center;
   gap:1rem;
 }
-.update-section>div{
-  width: 24rem;
-}
+
 .update-section h3{
  margin:2rem auto;
  text-align: center;
@@ -145,7 +142,6 @@
 /* Mission-section */
 
 .mission-section {
-  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(530px,1fr));
   justify-content: center;
@@ -195,7 +191,6 @@
 /* About-us section css */
 
 .about {
-  padding: 2rem;
   gap: 2rem;
 }
 
@@ -223,11 +218,10 @@
 .course {
   margin: 1.25rem auto; 
   text-align: center;
-  padding: 1.25rem; 
 }
 
 .heading {
-  font-size: 2.25rem; 
+  font-size: 2rem; 
   font-weight: bold;
   margin: 4rem auto; 
   color: #333;
@@ -236,7 +230,7 @@
 .course-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
-  grid-gap: 2rem; 
+  gap: 2rem; 
 }
 
 .courseimage-container img {
@@ -317,7 +311,6 @@ textarea {
 /* Footer-section css */
 
 .footer-content{
-  padding: 2rem;
   background-color: #333;
   color: #fff;
   display: grid;
