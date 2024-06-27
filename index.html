@@ -308,31 +308,36 @@
 
     <section class="contact-section container flex items-center">
       <h3><span class="color-span">Reach Out</span> to Us</h3>
-      <form class="user-form">
+      <form class="user-form" action="#">
         <div class="user-info">
           <div>
             <label for="firstname">First name</label>
-            <input type="text" name="firstname" required />
+            <input type="text" id="firstname" name="firstname" required />
           </div>
           <div>
             <label for="lastname">Last name</label>
-            <input type="text" name="lastname" required />
+            <input type="text" id="lastname" name="lastname" required />
           </div>
           <div>
             <label for="email">Your Email</label>
-            <input type="email" name="email" required />
+            <input type="email" id="email" name="email" required />
           </div>
           <div>
             <label for="phone">Your phone</label>
-            <input type="tel" name="phone" maxlength="10" required />
+            <input type="tel" id="phone" name="phone" maxlength="10" required />
           </div>
         </div>
-        <label for="subject">Your Subject</label>
-        <input type="text" name="subject" />
-        <label for="query-message">Your Message</label>
-        <textarea name="query-message" id="query-message" rows="5"></textarea>
-        <button class="btn">Send Message</button>
+        <div>
+          <label for="subject">Your Subject</label>
+          <input type="text" id="subject" name="subject" required />
+        </div>
+        <div>
+          <label for="query-message">Your Message</label>
+          <textarea id="query-message" name="query-message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
       </form>
+      
     </section>
 
     <!-- Footer-section -->
@@ -409,6 +414,8 @@
         & Om
       </div>
     </footer>
+
+
 
     <!-- Apply-now form section -->
     <div class="blur-background" onclick="closeForm()"></div>
@@ -491,7 +498,7 @@
       <fieldset class="course-name flex items-center">
         <legend>Course Selection</legend>
         <label class="required" for="course">Select Desired Course</label>
-        <input type="radio" id="bca" name="course" value="BCA" />
+        <input type="radio" id="bca" name="course" value="BCA" required/>
         <label for="bca"> BCA</label>
         <input type="radio" id="mca" name="course" value="MCA" />
         <label for="mca"> MCA</label>
@@ -506,6 +513,16 @@
       </fieldset>
       <button class="btn" type="submit">Submit Application</button>
     </form>
+
+    <!-- Form-result section -->
+
+    <section class="form-submited">
+      <ion-icon name="checkmark-circle" style="color: green;"></ion-icon>
+        <h3>Thank You!</h3>
+        <p>Your details has been successfully submitted. Thanks!</p>
+        <button onclick="closeMessage()">Ok</button>
+    </section>
+
 
     <!-- Script section -->
 

@@ -5,6 +5,27 @@ let navIcon2 = document.getElementById("mobile-nav-icon2");
 let nav = document.querySelector(".nav-links");
 let blur=document.querySelector(".blur-background");
 let applyForm=document.querySelector(".apply-form");
+let form1=document.querySelector(".user-form");
+let form2=document.querySelector(".apply-form");
+let successBox=document.querySelector(".form-submited");
+
+
+// Adding event-listener
+
+form1.addEventListener('submit', (e)=>{
+  console.log(form1);
+  e.preventDefault();
+  form1.reset();
+  successMessage();
+});
+
+form2.addEventListener('submit', (e)=>{
+  console.log(e)
+  e.preventDefault();
+  form2.reset();
+  successMessage();
+});
+
 
 // Mobile-responsive navbar functions
 
@@ -45,4 +66,15 @@ function showForm(){
 function closeForm(){
   blur.style.display="none";
   applyForm.style.display="none";
+}
+
+// Success message function
+
+function successMessage(){
+  document.body.style.overflow = "hidden";
+  successBox.style.display="inline-block";
+}
+function closeMessage(){
+  document.body.style.overflow = "auto";
+  successBox.style.display="none";
 }
