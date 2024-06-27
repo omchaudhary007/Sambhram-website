@@ -13,14 +13,12 @@ let successBox=document.querySelector(".form-submited");
 // Adding event-listener
 
 form1.addEventListener('submit', (e)=>{
-  console.log(form1);
   e.preventDefault();
   form1.reset();
   successMessage();
 });
 
 form2.addEventListener('submit', (e)=>{
-  console.log(e)
   e.preventDefault();
   form2.reset();
   successMessage();
